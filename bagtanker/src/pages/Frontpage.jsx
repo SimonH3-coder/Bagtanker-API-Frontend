@@ -1,6 +1,10 @@
+import { Slider } from "../components/Slider/Slider"
 
 export function Frontpage() {
     return (
-        <h1>Frontpage</h1>
+        <div>
+            <h1>Frontpage</h1>
+            <Slider />
+        </div>
     )
 }
