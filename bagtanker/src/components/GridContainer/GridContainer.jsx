@@ -1,6 +1,6 @@
-import style from "./GrindContainer.module.scss";
+import style from "./GridContainer.module.scss";
 
-export function GridContainer({ children, styleprops }) {
+export function GridContainer({ children, styleprops}) {
     return (
         <section style = {{... styleprops }} className = {style.gridContainer}>
             {children}
