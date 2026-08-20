@@ -1,13 +1,15 @@
 import Bagtanker from '../../assets/Bagtanker.svg'
+import style from './Footer.module.scss'
 
 
 export function Footer() {
     return (
-        <footer>
+        <footer className={style.footerstyle}>
+            <section>
         <figure>
           <img src={Bagtanker} alt="Bagtanker" />  
         </figure>
-        <section>
+        
              <p>Øster Uttrupvej </p>
         <p>9000 Aalborg</p>
         <p>Tlf: 12345678 </p>

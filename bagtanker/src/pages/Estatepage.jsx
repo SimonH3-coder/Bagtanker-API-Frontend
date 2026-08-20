@@ -10,11 +10,26 @@ export function Estatepage() {
         data: estateData,
         isLoading: estateLoading,
         error: estateError,
-    } = useFetch(import.meta.env.VITE_PUBLIC_BASE_URL + "/api/estates");
+    } = useFetch(import.meta.env.VITE_PUBLIC_BASE_URL + "/api/products");
 
     const [sortedData, setSortedData] = useState([]);
 
     console.log(sortedData);
+
+    // Smart  sortering
+    const sort = (e) => {
+        const clone = [...estateData];
+        const sorted = clone.sort((a, b) => a[e.target.value] < b[e.target.value]);
+        setSortedData(sorted);
+    }
+
+    // Smart filtering
+
+    const filter = (e) => {
+        const clone = [...estateData];
+        const filtered = clone.filter((item) => item.category === e.target.value);
+        setSortedData(filtered);
+    }
 
     const sortArray = (event) => {
         const option = event.target.value

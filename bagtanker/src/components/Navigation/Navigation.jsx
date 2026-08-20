@@ -1,9 +1,10 @@
-
 import { NavLink } from "react-router"
+import styles from './Navigation.module.scss'
+
 
 export function Navigation() {
     return  (
-        <nav>
+        <nav className={styles.navStyle}>
             <ul>
                 <li>
                     <NavLink to="/">Runstykker</NavLink>

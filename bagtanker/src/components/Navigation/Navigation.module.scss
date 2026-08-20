@@ -1,0 +1,21 @@
+@use '../../globals.scss' as globals;
+
+.navStyle {
+     height: 7vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    background-color: globals.$color-dark-grey;
+}
+
+ul { display: flex;
+        gap: 14px;
+        justify-content: end;
+        margin: 32px;
+        li {
+            list-style-type: none
+            a {
+                text-decoration: none;
+                color: globals.$color-light-grey;
+            }
+        }
+    }
