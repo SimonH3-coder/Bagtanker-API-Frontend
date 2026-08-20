@@ -3,11 +3,11 @@ import {useFetch} from '../hooks/useFetch'
 import { HeaderImage} from '../components/HeaderImage/HeaderImage'
 import { DetailsContainer } from '../components/DetailsContainer/DetailsContainer'
 
-export function EstateDetailspage() {
+export function ProductDetailspage() {
     const {id} = useParams();
 
     const {data, isLoading, error} = useFetch(
-        import.meta.env.Vite_PUBLIC_BASE_URL + "/api/estates/" + id,
+        import.meta.env.Vite_PUBLIC_BASE_URL + "/api/products/" + id,
     )
 
     if (isLoading) {

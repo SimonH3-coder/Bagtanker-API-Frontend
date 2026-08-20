@@ -15,7 +15,7 @@ export function Header() {
                     <NavLink to="/">Forside</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/estates">Produkter</NavLink>
+                    <NavLink to="/products">Produkter</NavLink>
                 </li>
                 <li>
                     <NavLink to="/news">Nyheder</NavLink>

@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router'
 import { Frontpage } from './pages/Frontpage.jsx'
-import { Estatepage } from './pages/Estatepage.jsx'
-import { EstateDetailspage } from './pages/EstateDetailspage.jsx'
+import { Productpage } from './pages/Productpage.jsx'
+import { ProductDetailspage } from './pages/ProductDetailspage.jsx'
 import { Loginpage } from './pages/Loginpage.jsx'
 import { SearchResultspage } from './pages/SearchResultspage.jsx'
 import { Contactpage } from './pages/Contactpage.jsx'
@@ -19,8 +19,8 @@ function App() {
           <Route element={<MainLayout />}>
 
             <Route path="/" index element={<Frontpage />} />
-            <Route path="/estates" index element={<Estatepage />} />
-            <Route path="/estates/:id" index element={<EstateDetailspage />} />
+            <Route path="/products" index element={<Productpage />} />
+            <Route path="/products/:id" index element={<ProductDetailspage />} />
 
             <Route path="/login" index element={<Loginpage />} />
 
